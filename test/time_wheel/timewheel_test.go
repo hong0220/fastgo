@@ -1,9 +1,9 @@
-package timewheel
+package time_wheel
 
 import (
 	"errors"
 	"fmt"
-	"github.com/hong0220/fastgo/pkg/timewheel"
+	"github.com/hong0220/fastgo/pkg/time_wheel"
 	"testing"
 	"time"
 )
@@ -13,7 +13,7 @@ var twoSecond int64 = 2
 
 func Test_TimeWheel(t *testing.T) {
 	// 初始化一个时间间隔是1s，一共有60个齿轮的时间轮，默认时间轮转动一圈的时间是60s
-	timeWheel := timewheel.CreateTimeWheel(1*time.Second, 60, TimeWheelDefaultJob)
+	timeWheel := time_wheel.CreateTimeWheel(1*time.Second, 60, TimeWheelDefaultJob)
 
 	// 启动时间轮
 	timeWheel.Start()

@@ -1,4 +1,4 @@
-package timewheel
+package time_wheel
 
 import (
 	"time"
